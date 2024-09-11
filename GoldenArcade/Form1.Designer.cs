@@ -32,8 +32,6 @@
             this.playButton = new System.Windows.Forms.Button();
             this.timerLabel = new System.Windows.Forms.Label();
             this.goLabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // playButton
@@ -77,21 +75,12 @@
             this.goLabel.Text = "GO!!!";
             this.goLabel.Click += new System.EventHandler(this.goLabel_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(267, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // GoldenArcade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(367, 288);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.goLabel);
             this.Controls.Add(this.timerLabel);
             this.Controls.Add(this.playButton);
@@ -99,7 +88,6 @@
             this.Name = "GoldenArcade";
             this.Text = "GoldenArcade";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,7 +99,6 @@
         private System.Windows.Forms.Label timerLabel;
         private System.Windows.Forms.Label timer;
         private System.Windows.Forms.Label goLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
