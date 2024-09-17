@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using System.Media;
+using System.IO;
 
 namespace GoldenArcade
 {
@@ -24,8 +24,16 @@ namespace GoldenArcade
             timerLabel.Hide();
             goLabel.Hide();
         }
+        private void effectButton_Click(object sender, EventArgs e)
 
-        private void playButton_Click(object sender, EventArgs e)
+        {
+
+            var war = new System.Windows.Media.MediaPlayer();
+            war.Open(new Uri(Application.StartupPath + "/Resources/blip.wav"));
+            war.Play();
+        }
+
+            private void playButton_Click(object sender, EventArgs e)
         {
             playButton.Hide();
             timerLabel.Show();
